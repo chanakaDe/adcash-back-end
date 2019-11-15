@@ -9,6 +9,8 @@
 * MySQL
 * Auth0
 
+>This application is created using latest SOA architecture. This REST API can be hosted in a seperate server independently and can be connected to a remote database instance. 
+
 ### Installation
 
 Clone the repository `https://github.com/chanakaDe/adcash-back-end.git`
