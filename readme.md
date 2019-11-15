@@ -25,6 +25,20 @@ You can see 3 data tables in your MySQL database.
 
 To test the server, use `php -S localhost:8000 -t public`
 
+### Developer Note
+
+This API is secured with Auth0 using middleware.
+For the testing and demo purposes, I have not used Auth0 middleware at the moment. 
+**[Auth0Middleware.php](https://github.com/chanakaDe/adcash-back-end/blob/master/app/Http/Middleware/Auth0Middleware.php)**
+
+To test with Auth0 authentication, please add `'middleware' => 'auth'` in the `/routes/web.php` file. 
+**[web.php](https://github.com/chanakaDe/adcash-back-end/blob/master/routes/web.php)**
+
+All the test cases in stored in the `/tests` directory. 
+I have tested all the test cases with using Auth0. 
+**[OrdersTest.php](https://github.com/chanakaDe/adcash-back-end/blob/master/tests/OrdersTest.php)**
+
+
 ## License
 
 The Adcash Order Manager (Back End) is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
